@@ -72,7 +72,7 @@ const getSeries = async(type) =>{
       });
     }else{
       const $element = $(element);
-      const id = $element.find('article.TPost.C > a').attr('href').split('.io/')[1];
+      const id = $element.find('article.TPost.C > a').attr('href').split('.is/')[1];
       const episode = $element.find('article.TPost.C > a > h2.Title').text();
       const poster = 'https://'+$element.find('article.TPost.C > a > div.Image > figure > img').attr('data-src').split('//')[1];
       
@@ -130,7 +130,7 @@ const getDetail = async(id) => {
       const season = [];
       $(`#season-${i} > li`).each((index , element) =>{
         const $element = $(element);
-        const id = $element.find('article a').attr('href').split('.io/')[1];
+        const id = $element.find('article a').attr('href').split('.is/')[1];
         const episode = $element.find('article a div.Image span.Year').text().split('x')[1];
         const preview = $element.find('article a div.Image figure img').attr('data-src').replace('w185','w500');
         const release = $element.find('article a p').text();
