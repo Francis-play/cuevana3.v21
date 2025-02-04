@@ -1,5 +1,5 @@
 module.exports = {
-  BASE_URL: "https://cuevana3.me/",
+  BASE_URL: "https://ww8.cuevana3.to/",
   MOVIES: [
     "peliculas",
     "estrenos",
